@@ -1,0 +1,119 @@
+/* line 3, sass/style.scss */
+body {
+  background: #ededed;
+}
+
+/* line 7, sass/style.scss */
+.ce-editor {
+  position: relative;
+}
+/* line 9, sass/style.scss */
+.ce-editor .ce-editor-toolbox {
+  position: absolute;
+  z-index: 100;
+  left: -30px;
+  top: -20px;
+  display: none;
+}
+/* line 15, sass/style.scss */
+.ce-editor .ce-editor-toolbox .ce-btn {
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 28, sass/style.scss */
+.ce-editor .ce-editor-toolbox .ce-btn:last-child {
+  margin-right: 0px;
+}
+/* line 31, sass/style.scss */
+.ce-editor .ce-editor-toolbox .ce-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+}
+/* line 37, sass/style.scss */
+.ce-editor .ce-editor-form {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 101;
+  background: #FFF;
+  width: 400px;
+  display: none;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  padding: 24px;
+}
+@media (max-width: 767px) {
+  /* line 37, sass/style.scss */
+  .ce-editor .ce-editor-form {
+    width: 300px;
+  }
+}
+/* line 50, sass/style.scss */
+.ce-editor .ce-editor-form input.ce-editor-form-input, .ce-editor .ce-editor-form textarea.ce-editor-form-textarea {
+  font-size: 13px;
+  background: none;
+  color: #242424;
+  padding: 5px 0px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+/* line 58, sass/style.scss */
+.ce-editor .ce-editor-form input.ce-editor-form-input:focus, .ce-editor .ce-editor-form input.ce-editor-form-input:focus, .ce-editor .ce-editor-form textarea.ce-editor-form-textarea:focus, .ce-editor .ce-editor-form textarea.ce-editor-form-textarea:focus {
+  border-bottom-color: #7c7c7c;
+  outline-color: #ededed;
+}
+/* line 64, sass/style.scss */
+.ce-editor .ce-editor-form .ce-editor-form-btns-holder {
+  margin-top: 16px;
+}
+/* line 66, sass/style.scss */
+.ce-editor .ce-editor-form .ce-editor-form-btns-holder button.ce-editor-form-submit {
+  font-size: 13px;
+  min-width: 80px;
+  padding: 5px;
+  border: none;
+  background: #ddd;
+  color: #242424;
+  float: left;
+  display: block;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+/* line 76, sass/style.scss */
+.ce-editor .ce-editor-form .ce-editor-form-btns-holder button.ce-editor-form-submit:hover {
+  background: #242424;
+  color: #FFF;
+  background: #171717;
+  -webkit-box-shadow: 0 5px 40px -6px #171717;
+  -moz-box-shadow: 0 5px 40px -6px #171717;
+  -o-box-shadow: 0 5px 40px -6px #171717;
+  box-shadow: 0 5px 40px -6px #171717;
+}
+/* line 86, sass/style.scss */
+.ce-editor .ce-editor-form .ce-editor-form-btns-holder button.ce-editor-form-cancel {
+  font-size: 13px;
+  min-width: 80px;
+  padding: 5px;
+  border: none;
+  background: none;
+  color: #242424;
+  float: left;
+  display: block;
+}
+/* line 95, sass/style.scss */
+.ce-editor .ce-editor-form .ce-editor-form-btns-holder button.ce-editor-form-cancel:hover {
+  text-decoration: underline;
+}

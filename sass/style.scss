@@ -1,0 +1,101 @@
+@import 'app';
+
+body{
+	background: #ededed;
+}
+
+.ce-editor{
+	position: relative;
+	.ce-editor-toolbox{
+		position:absolute;
+		z-index: 100;
+		left: -30px;
+		top: -20px;
+		display:none;
+		.ce-btn{
+			border: none;
+			background: rgba(0,0,0,0.5);
+			color:#FFF;
+			width: 25px;
+			height: 25px;
+			font-size:12px;
+			display: flex;
+			float:left;
+			align-items:center;
+			justify-content: center;
+			margin-right: 5px;
+			@include radius('circle');
+			&:last-child{
+				margin-right:0px;
+			}
+			&:hover{
+				background: rgba(0,0,0,0.7);
+				@include box-shadow(1);
+			}
+		}
+	}
+	.ce-editor-form{
+		position:absolute;
+		top:0px;
+		left:0px;
+		z-index:101;
+		background:#FFF;
+		width:400px;
+		display:none;
+		@include box-shadow(1);
+		padding:24px;
+		@include media($xs){
+			width:300px;
+		}
+		input.ce-editor-form-input,textarea.ce-editor-form-textarea{
+			font-size:13px;
+			background: none;
+			color: #242424;
+			padding: 5px 0px;
+			border:none;
+			border-bottom:1px solid #ddd;
+			width:100%;
+			&:focus,&:focus{
+				border-bottom-color: #7c7c7c;
+				outline-color: #ededed;
+			}
+		}
+		
+		.ce-editor-form-btns-holder{
+			 margin-top: 16px;
+			 button.ce-editor-form-submit{
+				font-size: 13px;
+			    min-width: 80px;
+			    padding: 5px;
+			    border: none;
+			    background: #ddd;
+			    color: #242424;
+			    float:left;
+			    display:block;
+			    @include radius(20);
+			    &:hover{
+			    	background:#242424;
+			    	color:#FFF;
+			    	background: darken(#242424,5%);
+					-webkit-box-shadow: 0 5px 40px -6px darken(#242424,5%);
+					-moz-box-shadow: 0 5px 40px -6px darken(#242424,5%);
+					-o-box-shadow: 0 5px 40px -6px darken(#242424,5%);
+					box-shadow: 0 5px 40px -6px darken(#242424,5%);
+			    }
+			}
+			button.ce-editor-form-cancel{
+				font-size: 13px;
+			    min-width: 80px;
+			    padding: 5px;
+			    border: none;
+			    background: none;
+			    color: #242424;
+			    float:left;
+			    display:block;
+			    &:hover{
+			    	text-decoration:underline;
+			    }
+			}
+		}
+	}
+}

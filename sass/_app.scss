@@ -1,0 +1,21 @@
+@import 'mixins/responsive';
+@import 'mixins/flex';
+@import 'mixins/radius';
+@import 'mixins/box_shadow';
+@import 'mixins/gradient';
+
+$xs : '<=767px';
+$sm : '>=768px','<=991px';
+$md : '>=992px','<=1199px';
+$lg : '>=1200px';
+
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+$font-primary : Roboto, 'Roboto', Open Sans, 'Open Sans', sans-serif;
+$font-primary-medium : Roboto, 'Roboto', Open Sans, 'Open Sans', sans-serif;
+$font-primary-bold : Roboto, 'Roboto', Open Sans, 'Open Sans', sans-serif;
+
+$font-primary2 : Open Sans, 'Open Sans', sans-serif;
+$color-primary: #cf362f;
+$color-body: #121212;
+
